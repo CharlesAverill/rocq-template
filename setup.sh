@@ -15,6 +15,8 @@ mv project.opam "$PROJECT.opam"
 rm setup.sh
 mv "../.git.$PROJECT" .git
 
+rocq makefile -f _RocqMakefile -o Makefile
+
 echo "Creating gh-pages branch, pushing to origin/gh-pages"
 git checkout -b gh-pages
 git push origin gh-pages
