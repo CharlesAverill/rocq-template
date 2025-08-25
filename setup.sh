@@ -13,6 +13,7 @@ mv README.md.template README.md
 mv project.opam "$PROJECT.opam"
 
 rm setup.sh
+mv "../.git.$PROJECT" .git
 
 echo "Creating gh-pages branch, pushing to origin/gh-pages"
 git checkout -b gh-pages
